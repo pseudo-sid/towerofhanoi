@@ -11,7 +11,7 @@ void move(int n, char source, char helper, char destination){
 	move(n-1, source, destination, helper);
 	cout << "Shift disk " << n << " from " << source << " to " << destination << endl;
 	move(n-1, helper, source, destination);
-
+	return;
 }
 int main(int argc, char){
 	int n;	cin >> n; // TAKES INPUT
